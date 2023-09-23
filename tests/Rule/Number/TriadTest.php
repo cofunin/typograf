@@ -24,11 +24,11 @@ class TriadTest extends RuleTestCase
         return [
             [
                 "1000\n10000",
-                "1000\n10&thinsp;000",
+                "1000\n10&nbsp;000",
             ],
             [
                 '<p>10000</p>',
-                '<p>10&thinsp;000</p>',
+                '<p>10&nbsp;000</p>',
             ],
             [
                 '+79269999999',
@@ -36,11 +36,11 @@ class TriadTest extends RuleTestCase
             ],
             [
                 'ИНН: 123123123123',
-                'ИНН: 123&thinsp;123&thinsp;123&thinsp;123',
+                'ИНН: 123&nbsp;123&nbsp;123&nbsp;123',
             ],
             [
                 '123456789123456',
-                '123&thinsp;456&thinsp;789&thinsp;123&thinsp;456',
+                '123&nbsp;456&nbsp;789&nbsp;123&nbsp;456',
             ],
             [
                 '1000',
@@ -48,7 +48,7 @@ class TriadTest extends RuleTestCase
             ],
             [
                 '10000',
-                '10&thinsp;000',
+                '10&nbsp;000',
             ],
             [
                 '10 000-10 000',
@@ -64,7 +64,7 @@ class TriadTest extends RuleTestCase
             ],
             [
                 'Цена товара 10990 рублей',
-                'Цена товара 10&thinsp;990 рублей',
+                'Цена товара 10&nbsp;990 рублей',
             ],
         ];
     }

@@ -17,7 +17,7 @@ class Triad extends AbstractRule
             function ($matches) {
                 $num = str_replace(
                     ' ',
-                    '&thinsp;',
+                    '&nbsp;',
                     number_format((int) $matches[2], 0, '', ' ')
                 );
 
